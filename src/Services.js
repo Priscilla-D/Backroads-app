@@ -1,3 +1,5 @@
+import { SERVICES_INFOS } from "./utils/articles";
+
 function Services() {
   return (
     <section className="section services" id="services">
@@ -7,44 +9,19 @@ function Services() {
         </h2>
       </div>
       <div className="section-center services-center">
-        <article className="service">
-          <span className="service-icon">
-            <i className="fas fa-wallet fa-fw"></i>
-          </span>
-          <div className="service-info">
-            <h4 className="service-title">saving money</h4>
-            <p className="service-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, officia.
-            </p>
-          </div>
-        </article>
-
-        <article className="service">
-          <span className="service-icon">
-            <i className="fas fa-tree fa-fw"></i>
-          </span>
-          <div className="service-info">
-            <h4 className="service-title">endless hiking</h4>
-            <p className="service-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, officia.
-            </p>
-          </div>
-        </article>
-
-        <article className="service">
-          <span className="service-icon">
-            <i className="fas fa-socks fa-fw"></i>
-          </span>
-          <div className="service-info">
-            <h4 className="service-title">amazing comfort</h4>
-            <p className="service-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, officia.
-            </p>
-          </div>
-        </article>
+        {SERVICES_INFOS.map((service) => {
+          return (
+            <article className="service">
+              <span className="service-icon">
+                <i className={service.icon}></i>
+              </span>
+              <div className="service-info">
+                <h4 className="service-title">{service.title}</h4>
+                <p className="service-text">{service.content}</p>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );

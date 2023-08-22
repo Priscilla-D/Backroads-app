@@ -40,3 +40,24 @@ export const TOURS_INFOS = [
     price: "from $3300",
   },
 ];
+
+export const SERVICES_INFOS = [
+  {
+    title: "saving money",
+    icon: "fas fa-wallet fa-fw",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.",
+  },
+  {
+    title: "endless hiking",
+    icon: "fas fa-tree fa-fw",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.",
+  },
+  {
+    title: "amazing comfort",
+    icon: "fas fa-socks fa-fw",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.",
+  },
+];
