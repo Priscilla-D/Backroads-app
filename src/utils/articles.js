@@ -1,4 +1,4 @@
-export const ARTICLES_INFOS = [
+export const TOURS_INFOS = [
   {
     title: "Tibet Adventure",
     src: "./images/tour-1.jpeg",
