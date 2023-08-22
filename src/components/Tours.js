@@ -1,4 +1,4 @@
-import { TOURS_INFOS } from "./utils/articles";
+import { TOURS_INFOS } from "../utils/articles";
 
 function Tours() {
   return (
