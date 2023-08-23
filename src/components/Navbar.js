@@ -1,5 +1,6 @@
 import logo from "../images/logo.svg";
-import { SECTIONS_LINKS, SOCIALS_LINKS } from "../utils/data";
+import Sections from "./Sections";
+import Socials from "./Socials";
 
 function Navbar() {
   return (
@@ -12,29 +13,13 @@ function Navbar() {
               <i className="fas fa-bars"></i>
             </button>
           </div>
-          {/* <!-- left this comment on purpose --> */}
+
           <ul className="nav-links" id="nav-links">
-            {SECTIONS_LINKS.map((section) => {
-              return (
-                <li key={section.id}>
-                  <a href={`#${section.name}`} className="nav-link">
-                    {section.name}
-                  </a>
-                </li>
-              );
-            })}
+            <Sections className={"nav-link"} />
           </ul>
 
           <ul className="nav-icons">
-            {SOCIALS_LINKS.map((social) => {
-              return (
-                <li key={social.id}>
-                  <a href={social.src} target="_blank" className="nav-icon">
-                    <i className={social.icon}></i>
-                  </a>
-                </li>
-              );
-            })}
+            <Socials />
           </ul>
         </div>
       </nav>
