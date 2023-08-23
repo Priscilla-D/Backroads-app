@@ -5,7 +5,7 @@ function Footer() {
     <footer className="section footer">
       <ul className="footer-links">
         {SECTIONS_LINKS.map((section) => (
-          <li>
+          <li key={section.id}>
             <a href={`#${section.name}`} className="footer-link">
               {section.name}
             </a>
@@ -13,13 +13,13 @@ function Footer() {
         ))}
       </ul>
       <ul className="footer-icons">
-        <li>
-          {SOCIALS_LINKS.map((social) => (
+        {SOCIALS_LINKS.map((social) => (
+          <li key={social.id}>
             <a href={social.src} target="_blank" className="footer-icon">
               <i className={social.icon}></i>
             </a>
-          ))}
-        </li>
+          </li>
+        ))}
       </ul>
       <p className="copyright">
         copyright &copy; Backroads travel tours company

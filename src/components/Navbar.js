@@ -16,7 +16,7 @@ function Navbar() {
           <ul className="nav-links" id="nav-links">
             {SECTIONS_LINKS.map((section) => {
               return (
-                <li>
+                <li key={section.id}>
                   <a href={`#${section.name}`} className="nav-link">
                     {section.name}
                   </a>
@@ -28,7 +28,7 @@ function Navbar() {
           <ul className="nav-icons">
             {SOCIALS_LINKS.map((social) => {
               return (
-                <li>
+                <li key={social.id}>
                   <a href={social.src} target="_blank" className="nav-icon">
                     <i className={social.icon}></i>
                   </a>

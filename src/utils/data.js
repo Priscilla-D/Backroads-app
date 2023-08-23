@@ -1,5 +1,6 @@
 export const TOURS_INFOS = [
   {
+    id: 1,
     title: "Tibet Adventure",
     src: "./images/tour-1.jpeg",
     date: "august 26th, 2020",
@@ -10,6 +11,7 @@ export const TOURS_INFOS = [
     price: "from $2100",
   },
   {
+    id: 2,
     title: "best of java",
     src: "./images/tour-2.jpeg",
     date: "october 1th, 2020",
@@ -20,6 +22,7 @@ export const TOURS_INFOS = [
     price: "from $1400",
   },
   {
+    id: 3,
     title: "explore hong kong",
     src: "./images/tour-3.jpeg",
     date: "september 15th, 2020",
@@ -30,6 +33,7 @@ export const TOURS_INFOS = [
     price: "from $5000",
   },
   {
+    id: 4,
     title: "kenya highlights",
     src: "./images/tour-4.jpeg",
     date: "december 5th, 2019",
@@ -43,18 +47,21 @@ export const TOURS_INFOS = [
 
 export const SERVICES_INFOS = [
   {
+    id: 1,
     title: "saving money",
     icon: "fas fa-wallet fa-fw",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.",
   },
   {
+    id: 2,
     title: "endless hiking",
     icon: "fas fa-tree fa-fw",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.",
   },
   {
+    id: 3,
     title: "amazing comfort",
     icon: "fas fa-socks fa-fw",
     content:
@@ -64,30 +71,37 @@ export const SERVICES_INFOS = [
 
 export const SECTIONS_LINKS = [
   {
+    id: 1,
     name: "home",
   },
   {
+    id: 2,
     name: "about",
   },
   {
+    id: 3,
     name: "services",
   },
   {
+    id: 4,
     name: "tours",
   },
 ];
 
 export const SOCIALS_LINKS = [
   {
+    id: 1,
     src: "https://www.facebook.com",
-    icon: "fab fa-facebook"
+    icon: "fab fa-facebook",
   },
   {
+    id: 2,
     src: "https://www.twitter.com",
-    icon: "fab fa-twitter"
+    icon: "fab fa-twitter",
   },
   {
+    id: 3,
     src: "https://www.instagram.com",
-    icon: "fab fa-instagram"
+    icon: "fab fa-instagram",
   },
 ];

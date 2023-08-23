@@ -11,7 +11,7 @@ function Services() {
       <div className="section-center services-center">
         {SERVICES_INFOS.map((service) => {
           return (
-            <article className="service">
+            <article key={service.id} className="service">
               <span className="service-icon">
                 <i className={service.icon}></i>
               </span>

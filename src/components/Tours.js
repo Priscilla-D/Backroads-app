@@ -12,7 +12,7 @@ function Tours() {
       <div className="section-center featured-center">
         {TOURS_INFOS.map((tour) => {
           return (
-            <article className="tour-card">
+            <article key={tour.id} className="tour-card">
               <div className="tour-img-container">
                 <img src={tour.src} className="tour-img" alt="" />
                 <p className="tour-date">{tour.date}</p>
