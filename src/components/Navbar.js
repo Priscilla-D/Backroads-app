@@ -1,19 +1,5 @@
 import logo from "../images/logo.svg";
-
-const SECTIONS_LINKS = [
-  {
-    name: "home",
-  },
-  {
-    name: "about",
-  },
-  {
-    name: "services",
-  },
-  {
-    name: "tours",
-  },
-];
+import { SECTIONS_LINKS, SOCIALS_LINKS } from "../utils/articles";
 
 function Navbar() {
   return (
@@ -40,33 +26,15 @@ function Navbar() {
           </ul>
 
           <ul className="nav-icons">
-            <li>
-              <a
-                href="https://www.twitter.com"
-                target="_blank"
-                className="nav-icon"
-              >
-                <i className="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.twitter.com"
-                target="_blank"
-                className="nav-icon"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.twitter.com"
-                target="_blank"
-                className="nav-icon"
-              >
-                <i className="fab fa-squarespace"></i>
-              </a>
-            </li>
+            {SOCIALS_LINKS.map((social) => {
+              return (
+                <li>
+                  <a href={social.src} target="_blank" className="nav-icon">
+                    <i className={social.icon}></i>
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </nav>

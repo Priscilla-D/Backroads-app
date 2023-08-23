@@ -61,3 +61,33 @@ export const SERVICES_INFOS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.",
   },
 ];
+
+export const SECTIONS_LINKS = [
+  {
+    name: "home",
+  },
+  {
+    name: "about",
+  },
+  {
+    name: "services",
+  },
+  {
+    name: "tours",
+  },
+];
+
+export const SOCIALS_LINKS = [
+  {
+    src: "https://www.facebook.com",
+    icon: "fab fa-facebook"
+  },
+  {
+    src: "https://www.twitter.com",
+    icon: "fab fa-twitter"
+  },
+  {
+    src: "https://www.instagram.com",
+    icon: "fab fa-instagram"
+  },
+];
