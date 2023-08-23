@@ -1,4 +1,4 @@
-import { SERVICES_INFOS } from "../utils/articles";
+import { SERVICES_INFOS } from "../utils/data";
 
 function Services() {
   return (

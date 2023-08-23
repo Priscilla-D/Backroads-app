@@ -1,5 +1,5 @@
 import logo from "../images/logo.svg";
-import { SECTIONS_LINKS, SOCIALS_LINKS } from "../utils/articles";
+import { SECTIONS_LINKS, SOCIALS_LINKS } from "../utils/data";
 
 function Navbar() {
   return (
