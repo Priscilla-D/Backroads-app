@@ -2,6 +2,8 @@ import tourImg1 from "../images/tour-1.jpeg";
 import tourImg2 from "../images/tour-2.jpeg";
 import tourImg3 from "../images/tour-3.jpeg";
 import tourImg4 from "../images/tour-4.jpeg";
+import tourImg5 from "../images/tour-5.jpeg";
+import tourImg6 from "../images/tour-6.jpeg";
 
 export const TOURS_INFOS = [
   {
@@ -47,6 +49,28 @@ export const TOURS_INFOS = [
     country: "kenya",
     duration: "20 days",
     price: "from $3300",
+  },
+  {
+    id: 5,
+    title: "tanzanie discover",
+    src: tourImg5,
+    date: "august 8th, 2019",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
+    country: "tanzanie",
+    duration: "13 days",
+    price: "from $4500",
+  },
+  {
+    id: 6,
+    title: "india tour",
+    src: tourImg6,
+    date: "december 9th, 2017",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
+    country: "india",
+    duration: "10 days",
+    price: "from $1300",
   },
 ];
 
