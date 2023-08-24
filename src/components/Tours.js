@@ -1,13 +1,10 @@
 import { TOURS_INFOS } from "../utils/data";
+import Title from "./Title";
 
 function Tours() {
   return (
     <section className="section" id="tours">
-      <div className="section-title">
-        <h2>
-          featured <span>tours</span>
-        </h2>
-      </div>
+      <Title uncoloredText="featured" coloredText="tours" />
 
       <div className="section-center featured-center">
         {TOURS_INFOS.map((tour) => {

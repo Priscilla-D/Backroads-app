@@ -1,8 +1,13 @@
+import tourImg1 from "../images/tour-1.jpeg";
+import tourImg2 from "../images/tour-2.jpeg";
+import tourImg3 from "../images/tour-3.jpeg";
+import tourImg4 from "../images/tour-4.jpeg";
+
 export const TOURS_INFOS = [
   {
     id: 1,
     title: "Tibet Adventure",
-    src: "./images/tour-1.jpeg",
+    src: tourImg1,
     date: "august 26th, 2020",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
@@ -13,7 +18,7 @@ export const TOURS_INFOS = [
   {
     id: 2,
     title: "best of java",
-    src: "./images/tour-2.jpeg",
+    src: tourImg2,
     date: "october 1th, 2020",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
@@ -24,7 +29,7 @@ export const TOURS_INFOS = [
   {
     id: 3,
     title: "explore hong kong",
-    src: "./images/tour-3.jpeg",
+    src: tourImg3,
     date: "september 15th, 2020",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
@@ -35,7 +40,7 @@ export const TOURS_INFOS = [
   {
     id: 4,
     title: "kenya highlights",
-    src: "./images/tour-4.jpeg",
+    src: tourImg4,
     date: "december 5th, 2019",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.",
