@@ -1,19 +1,13 @@
 import { SOCIALS_LINKS } from "../utils/data";
+import Social from "./Social";
 
-function Socials() {
+function Socials({ parentClassName }) {
   return (
-    <>
-      {SOCIALS_LINKS.map((social) => {
-        const { id, src, icon } = social;
-        return (
-          <li key={id}>
-            <a href={src} target="_blank" className="nav-icon" rel="noreferrer">
-              <i className={icon}></i>
-            </a>
-          </li>
-        );
-      })}
-    </>
+    <ul className={parentClassName}>
+      {SOCIALS_LINKS.map((social) => (
+         <Social {...social} key={social.id} />
+      ))}
+    </ul>
   );
 }
 export default Socials;

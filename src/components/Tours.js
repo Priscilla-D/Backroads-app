@@ -9,7 +9,7 @@ function Tours() {
 
       <div className="section-center featured-center">
         {TOURS_INFOS.map((tour) => {
-          return <Tour {...tour} />;
+          return <Tour {...tour} key={tour.id} />;
         })}
       </div>
     </section>

@@ -14,13 +14,8 @@ function Navbar() {
             </button>
           </div>
 
-          <ul className="nav-links" id="nav-links">
-            <Sections className={"nav-link"} />
-          </ul>
-
-          <ul className="nav-icons">
-            <Socials />
-          </ul>
+          <Sections parentClassName="nav-links" itemClassName="nav-link" />
+          <Socials parentClassName="nav-icons" />
         </div>
       </nav>
     </>

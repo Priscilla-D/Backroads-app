@@ -1,16 +1,13 @@
 import { SECTIONS_LINKS } from "../utils/data";
+import Section from "./Section"
 
-function Sections({className}) {
+function Sections({ parentClassName, itemClassName }) {
   return (
-    <>
+    <ul className={parentClassName}>
       {SECTIONS_LINKS.map((section) => (
-        <li key={section.id}>
-          <a href={`#${section.name}`} className={className}>
-            {section.name}
-          </a>
-        </li>
+        <Section {...section} itemClassName={itemClassName} key={section.id} />
       ))}
-    </>
+    </ul>
   );
 }
 
